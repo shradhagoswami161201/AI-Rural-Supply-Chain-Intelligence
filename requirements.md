@@ -24,6 +24,21 @@ By leveraging historical market data, weather patterns, crop production statisti
 
 ## Requirements
 
+## Software Requirements
+- Python 3.x
+- AWS SageMaker
+- Amazon S3
+- Jupyter Notebook
+
+## Python Libraries Required
+pandas
+numpy
+scikit-learn
+matplotlib
+boto3
+joblib
+
+
 ### Requirement 1: Mandi Price Prediction
 
 **User Story:** As a farmer, I want to predict future mandi prices for my crops, so that I can decide the optimal time to sell and maximize my income.
@@ -329,3 +344,4 @@ By leveraging historical market data, weather patterns, crop production statisti
 2. The system must operate sustainably with potential revenue from partnerships or government funding
 3. The system must demonstrate measurable impact on farmer income within the first year
 4. The system must achieve user adoption of at least 10,000 active users within 6 months of launch
+
