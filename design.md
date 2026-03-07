@@ -16,6 +16,29 @@ The architecture follows a microservices pattern with clear separation between d
 6. **Privacy-Focused**: Minimal data collection with strong encryption
 
 ## Architecture
+## System Architecture
+
+1. Data Source
+   - Historical mandi price data collected from Agmarknet.
+
+2. Data Storage
+   - Dataset stored in Amazon S3 bucket.
+
+3. Model Training
+   - Random Forest Regression model trained using Python (scikit-learn).
+
+4. Model Storage
+   - Trained model saved as price_model.pkl and stored in Amazon S3.
+
+5. Model Execution
+   - Model loaded and executed in AWS SageMaker notebook environment.
+
+6. Prediction Service
+   - System predicts upcoming mandi prices based on previous price trends.
+
+7. Farmer Decision Support
+   - AI recommends best market based on predicted price.
+
 
 ### High-Level Architecture
 
@@ -519,3 +542,4 @@ interface UserActivity {
 
 **Storage:** PostgreSQL with partitioning by month
 **Retention:** 1 year for detailed logs, aggregated metrics retained indefinitely
+
